@@ -17,7 +17,7 @@
 
 void line()
 {
-    std::cout << "-----------------------------------------" << std::endl;
+    std::cout << "****************************************************" << std::endl;
 };
 
 int main()
@@ -42,6 +42,7 @@ int main()
     std::cout << "The key:      " ;
     std::getline(std::cin, key);
 
+    std::endl;
     line();
 
     //Now prints out the three input strings
@@ -100,12 +101,14 @@ int main()
 
     }// end of first loop
 
+    std::endl;
     line();
 
     /* Once both results have been computed, prints them out */
     std::cout << "Encrypted:    [" << encrypted << "]" << std::endl;
     std::cout << "Decrypted:    [" << decrypted << "]" << std::endl;
 
+    std::endl;
     line();
 
     return 0;
