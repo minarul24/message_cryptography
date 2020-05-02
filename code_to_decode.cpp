@@ -14,6 +14,12 @@
 #include <string>
 #include <cctype>
 
+
+void line()
+{
+    std::cout << "****************************************************" << std::endl;
+};
+
 int main()
 {
     int index {0}, index_2 {0}, sum {0}, sum_2 {0};// initializing my variables
@@ -24,15 +30,25 @@ int main()
     std::string message {};
     std::string key {};
 
+    line();
+
     //Read each of the alphabet, message and key (in that order).
+    std::cout << "Alphabets:    ";
     std::getline(std::cin, alphabet);
+
+    std::cout << "The Message:  ";
     std::getline(std::cin, message);
+
+    std::cout << "The key:      " ;
     std::getline(std::cin, key);
 
-    //Now print out the three input strings in the format specified in the assignment
+    std::endl;
+    line();
+
+    //Now prints out the three input strings
     std::cout << "Alphabet: [" << alphabet << "]" << std::endl;
-    std::cout << "Message: [" << message << "]" << std::endl;
-    std::cout << "Key: [" << key << "]" << std::endl;
+    std::cout << "Message:  [" << message << "]" << std::endl;
+    std::cout << "Key:  [" << key << "]" << std::endl;
 
     std::string encrypted {};
     std::string decrypted {};
@@ -85,10 +101,15 @@ int main()
 
     }// end of first loop
 
+    std::endl;
+    line();
 
-    /* Once both results have been computed, print them out in the format specified in the assignment */
-    std::cout << "Encrypted: [" << encrypted << "]" << std::endl;
-    std::cout << "Decrypted: [" << decrypted << "]" << std::endl;
+    /* Once both results have been computed, prints them out */
+    std::cout << "Encrypted:    [" << encrypted << "]" << std::endl;
+    std::cout << "Decrypted:    [" << decrypted << "]" << std::endl;
+
+    std::endl;
+    line();
 
     return 0;
 }
