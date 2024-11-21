@@ -1,8 +1,5 @@
 /* 
-// 
-//   Name: Mohammad Minarul Islam Shawon
-//   Student ID: V00901650
-//   Date: September 16, 2019   
+//  
 //
 //   Overview:  This program takes the alphabets to be used, a message
 //              and a key from the user as an input and then the 
